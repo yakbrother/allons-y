@@ -1,4 +1,4 @@
-# allons-y CSS
+# Allons-y CSS
 
 This is a CSS file that provides basic typography for any website, especially a website with a lot of text to read. It's based on a few principles of classic design with a modern twist and my own personal preferences.
 
@@ -10,7 +10,7 @@ This is based on the whole "lobotomized owl" design system, as shown by [this ta
 
 ## What is this?
 
-`allons-y` is a minimal, opinionated CSS system for readable, vertical content. It’s not a framework, not a theme, and not a reset (though it uses one). It’s just a set of sensible defaults for vertical rhythm, spacing, and readable line lengths—no colors, no fonts, no layout, no nonsense. Drop it in, and your text-heavy site is instantly more comfortable to read.
+`allons-y.css` is a minimal, opinionated CSS system for readable, vertical content. It’s not a framework, not a theme, and not a reset (though it uses one). It’s just a set of sensible defaults for vertical rhythm, spacing, and readable line lengths—no colors, no fonts, no layout, no nonsense. Drop it in, and your text-heavy site is instantly more comfortable to read.
 
 Inspired by classic book design, modern web best practices, and a little bit of stubbornness about what makes a page feel good to read.
 
