@@ -1,111 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8" />
-    <title>Alonz-y.css Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>allonz-y.css Demo</title>
     <link rel="stylesheet" type="text/css" href="../allonz-y.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <style type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
         html {
-            font-family: "Karla", sans-serif;
-            font-size: 16px;
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 18px;
+            background: radial-gradient(circle at 50% 50%, #f3f0ff, #f1ecff, #efe7ff, #eee3ff, #eedeff, #edd9ff, #edd4ff, #eecfff);
+            min-height: 100%;
         }
-
         body {
-            /* background: #FCF6F5; */
-            color: #444;
-            background: #FAD0C9;
+            color: #2a2233;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: none;
         }
-
         main {
-            max-width: 800px;
-            margin: 48px;
+            max-width: 700px;
+            margin: 48px 16px;
+            background: rgba(255,255,255,0.85);
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 32px 0 #e6e0f7;
+            padding: 2.5rem 2rem 2rem 2rem;
         }
-
-        main a,
-        main a:visited {
-            padding: 0 0.2em;
-            color: #444;
+        h1, h2, h3, h4, h5, h6, blockquote {
+            font-family: 'Merriweather', serif;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        p.lead-intro {
+            font-size: 1.25rem;
+            font-family: 'Merriweather', serif;
+            font-style: italic;
+            color: #5a4a7a;
+            margin-bottom: 2em;
+        }
+        blockquote {
+            border-left: 4px solid #bbaaff;
+            margin: 2em 0;
+            padding: 0.5em 1.5em;
+            color: #5a4a7a;
+            background: #f7f4ff;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2em 0;
+            background: #f7f4ff;
+            border-radius: 0.5em;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 0.75em 1em;
+            text-align: left;
+        }
+        th {
+            background: #e6e0f7;
+            font-weight: 700;
+        }
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #e6e0f7;
+        }
+        ul, ol {
+            margin-left: 2em;
+        }
+        a, a:visited {
+            color: #6a4cff;
             text-decoration: underline;
+            transition: background 0.2s;
         }
-
-        main a:hover {
-            background: #fff;
+        a:hover {
+            background: #e6e0f7;
+        }
+        code {
+            background: #f7f4ff;
+            border-radius: 0.3em;
+            padding: 0.1em 0.4em;
+            font-size: 0.95em;
         }
     </style>
 </head>
-
 <body>
-    <main>
-
-        <h1>Alonz-y.css Basic Typography Demo</h1>
-
-        <p class=" lead-intro">
-            We can use <code>class="lead-intro"</code> to create a larger intro paragraph. For this demo, I'm using
-            the
-            font
-            Karla, and wrote some basic extra styles for colors and paragraph width.
+        <main class="stack">
+        <h1>allonz-y.css Demo</h1>
+        <p class="lead-intro">
+            A minimal, opinionated CSS system for readable, vertical content. This demo uses <strong>Merriweather</strong> for headings and intros, and <strong>Inter</strong> for body text. The background is a soft, layered radial gradient.
         </p>
-
         <p>
-            Lorem ipsum dolor sit amet. Quo rerum ullam qui voluptatum earum sit consequatur laborum et
-            voluptatem nihil
-            ea
-            enim dolorem. Eum sequi atque id corrupti quam aut debitis dolore.
-        </p>
-        <p>Eos dolor labore id pariatur delectus et labore autem ut necessitatibus unde eum dolore similique quo
-            officia
-            voluptas ut nesciunt nihil. Qui exercitationem assumenda est libero odio non quod soluta? Qui neque
-            repudiandae
-            ut amet ullam eos omnis autem a deserunt dicta est praesentium enim rem deleniti asperiores. Hic
-            quas rerum
-            33
-            officia fugiat et praesentium alias id unde quisquam sed facere ipsam?
+            allonz-y.css is for anyone who wants a readable, comfortable page without fussing over a million classes or overrides. It’s just vertical rhythm, spacing, and readable line lengths—no colors, no fonts, no layout, no nonsense. Override anything you want.
         </p>
         <blockquote>
-            Blockquotes are slightly inset and have a larger left-hand border. The color is set to the text color, which
-            will work with most
-            sites,
-            but there are many ways to have fun and override this style.
+            “Typography is the craft of endowing human language with a durable visual form.”<br>
+            <span style="font-size:0.95em;float:right;">— Robert Bringhurst</span>
         </blockquote>
-        <p>
-            This concludes the first section.
-        </p>
-
-        <h3>
-            What about lists?
-        </h3>
-        <p>
-            Tailwind (a favorite framework of mine), likes to remove all list styles, but I think they should be
-            included by
-            default in text.
-        </p>
-        <ul>
-            <li>Item one</li>
-            <li>Another item</li>
-            <li>No more items for you!</li>
-        </ul>
-        <p>
-            Ordered lists are styled the same way.
-        </p>
-
-
-        <h3>
-            What about tables?
-        </h3>
-        <p>I went back and forth on whether to style tables, but I figured a general table format was more
-            useful than
-            not,
-            and can be easily changed.</p>
-
+        <h2>Lists</h2>
+            <ul class="stack">
+                <li>Simple, readable spacing</li>
+                <li>No utility classes needed</li>
+                <li>Easy to override</li>
+            </ul>
+            <ol class="stack">
+                <li>First ordered item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        <h2>Tables</h2>
         <table>
             <thead>
                 <tr>
@@ -127,20 +152,18 @@
                 </tr>
                 <tr>
                     <td>Bananas</td>
-                    <td>$11</td>
+                    <td>11</td>
                     <td>$2.00</td>
                 </tr>
             </tbody>
         </table>
-
-
-        <h3>Finally</h3>
+        <h2>Try it yourself</h2>
         <p>
-            This CSS file is a work in progress, but feel free to use it in your own pages if you like it. Any
-            suggestions
-            are completely welcome! You can reach me at <a href="mailto:tim@timeaton.dev">tim@timeaton.dev</a>.
+            Use <code>allonz-y.css</code> as a base for your own site. Add your own colors, fonts, or layout as needed. For more info, see the <a href="../README.md">README</a>.
+        </p>
+        <p style="margin-top:3em;font-size:0.95em;color:#8a7bb7;">
+            &copy; 2025 yakbrother
         </p>
     </main>
 </body>
-
 </html>
