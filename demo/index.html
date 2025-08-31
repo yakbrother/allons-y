@@ -1,169 +1,286 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <title>allonz-y.css Demo</title>
-    <link rel="stylesheet" type="text/css" href="../allonz-y.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../allons-y.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        html {
-            font-family: 'Inter', system-ui, sans-serif;
-            font-size: 18px;
-            background: radial-gradient(circle at 50% 50%, #f3f0ff, #f1ecff, #efe7ff, #eee3ff, #eedeff, #edd9ff, #edd4ff, #eecfff);
-            min-height: 100%;
-        }
-        body {
-            color: #2a2233;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            background: none;
-        }
-        main {
-            max-width: 700px;
-            margin: 48px 16px;
-            background: rgba(255,255,255,0.85);
-            border-radius: 1.5rem;
-            box-shadow: 0 4px 32px 0 #e6e0f7;
-            padding: 2.5rem 2rem 2rem 2rem;
-        }
-        h1, h2, h3, h4, h5, h6, blockquote {
-            font-family: 'Merriweather', serif;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5em;
-            font-weight: 700;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 2.5em;
-            margin-bottom: 0.5em;
-            font-weight: 700;
-        }
-        h3 {
-            font-size: 1.15rem;
-            margin-top: 2em;
-            margin-bottom: 0.5em;
-            font-weight: 700;
-        }
-        p.lead-intro {
-            font-size: 1.25rem;
-            font-family: 'Merriweather', serif;
-            font-style: italic;
-            color: #5a4a7a;
-            margin-bottom: 2em;
-        }
-        blockquote {
-            border-left: 4px solid #bbaaff;
-            margin: 2em 0;
-            padding: 0.5em 1.5em;
-            color: #5a4a7a;
-            background: #f7f4ff;
-            font-style: italic;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2em 0;
-            background: #f7f4ff;
-            border-radius: 0.5em;
-            overflow: hidden;
-        }
-        th, td {
-            padding: 0.75em 1em;
-            text-align: left;
-        }
-        th {
-            background: #e6e0f7;
-            font-weight: 700;
-        }
-        tr:not(:last-child) td {
-            border-bottom: 1px solid #e6e0f7;
-        }
-        ul, ol {
-            margin-left: 2em;
-        }
-        a, a:visited {
-            color: #6a4cff;
-            text-decoration: underline;
-            transition: background 0.2s;
-        }
-        a:hover {
-            background: #e6e0f7;
-        }
-        code {
-            background: #f7f4ff;
-            border-radius: 0.3em;
-            padding: 0.1em 0.4em;
-            font-size: 0.95em;
-        }
+      html {
+        font-family: "Merriweather", serif;
+        font-size: 18px;
+        min-height: 100%;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: radial-gradient(
+          circle at 50% 50%,
+          #f3f0ff,
+          #f1ecff,
+          #efe7ff,
+          #eee3ff,
+          #eedeff,
+          #edd9ff,
+          #edd4ff,
+          #eecfff
+        );
+      }
+      main {
+        max-width: 700px;
+        margin: 48px 16px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      blockquote {
+        font-family: inherit;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 2.5em;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 1.15rem;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+      }
+      p.lead-intro {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--color-muted);
+        margin-bottom: 2em;
+      }
+      blockquote {
+        border-left: 4px solid var(--color-accent);
+        margin: 2em 0;
+        padding: 0.5em 1.5em;
+        color: var(--color-muted);
+        background: var(--color-block);
+        font-style: italic;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2em 0;
+        background: var(--color-block);
+        border-radius: 0.5em;
+        overflow: hidden;
+      }
+      th,
+      td {
+        padding: 0.75em 1em;
+        text-align: left;
+      }
+      th {
+        background: var(--color-border);
+        font-weight: 700;
+      }
+      tr:not(:last-child) td {
+        border-bottom: 1px solid var(--color-border);
+      }
+      ul,
+      ol {
+        margin-left: 2em;
+      }
+      a,
+      a:visited {
+        color: var(--color-accent);
+        text-decoration: underline;
+        transition: background 0.2s;
+      }
+      a:hover {
+        background: var(--color-border);
+      }
+      code {
+        background: var(--color-block);
+        border-radius: 0.3em;
+        padding: 0.1em 0.4em;
+        font-size: 0.95em;
+      }
+      .switch {
+        display: inline-block;
+        margin: 1em 0;
+        padding: 0.5em 1em;
+        border-radius: 1em;
+        background: var(--color-block);
+        color: var(--color-fg);
+        border: 1px solid var(--color-border);
+        cursor: pointer;
+        font-size: 1em;
+        font-family: inherit;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .switch[aria-pressed="true"] {
+        background: var(--color-accent);
+        color: var(--color-bg);
+      }
     </style>
-</head>
-<body>
-        <main class="stack">
-        <h1>allonz-y.css Demo</h1>
-        <p class="lead-intro">
-            A minimal, opinionated CSS system for readable, vertical content. This demo uses <strong>Merriweather</strong> for headings and intros, and <strong>Inter</strong> for body text. The background is a soft, layered radial gradient.
-        </p>
-        <p>
-            allonz-y.css is for anyone who wants a readable, comfortable page without fussing over a million classes or overrides. It’s just vertical rhythm, spacing, and readable line lengths—no colors, no fonts, no layout, no nonsense. Override anything you want.
-        </p>
-        <blockquote>
-            “Typography is the craft of endowing human language with a durable visual form.”<br>
-            <span style="font-size:0.95em;float:right;">— Robert Bringhurst</span>
-        </blockquote>
-        <h2>Lists</h2>
-            <ul class="stack">
-                <li>Simple, readable spacing</li>
-                <li>No utility classes needed</li>
-                <li>Easy to override</li>
-            </ul>
-            <ol class="stack">
-                <li>First ordered item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-            </ol>
-        <h2>Tables</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Oranges</td>
-                    <td>5</td>
-                    <td>$5.00</td>
-                </tr>
-                <tr>
-                    <td>Apples</td>
-                    <td>6</td>
-                    <td>$13.00</td>
-                </tr>
-                <tr>
-                    <td>Bananas</td>
-                    <td>11</td>
-                    <td>$2.00</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Try it yourself</h2>
-        <p>
-            Use <code>allonz-y.css</code> as a base for your own site. Add your own colors, fonts, or layout as needed. For more info, see the <a href="../README.md">README</a>.
-        </p>
-        <p style="margin-top:3em;font-size:0.95em;color:#8a7bb7;">
-            &copy; 2025 yakbrother
-        </p>
+  </head>
+  <body>
+    <main class="stack">
+      <h1>allons-y.css Demo</h1>
+      <button class="switch" id="theme-switch" aria-pressed="false">
+        Switch to dark mode
+      </button>
+      <p class="lead-intro">
+        <strong>allons-y.css</strong> is a minimal, themeable CSS file for
+        readable, vertical content. This demo uses
+        <strong>Merriweather</strong> for all text. The background and text
+        colors are set by CSS variables and adapt to light or dark mode.
+      </p>
+      <h2>How it works</h2>
+      <ul class="stack">
+        <li>
+          <strong>Color variables:</strong>
+          <code>--color-bg</code> (background),
+          <code>--color-fg</code> (foreground/text),
+          <code>--color-accent</code> (links, highlights),
+          <code>--color-muted</code> (secondary text),
+          <code>--color-block</code> (block backgrounds),
+          <code>--color-border</code> (borders)
+        </li>
+        <li>
+          <strong>.stack utility:</strong> Adds vertical spacing between direct
+          children using <code>margin-top: var(--flow-space, 1em)</code>
+        </li>
+        <li>
+          <strong>Theme switch:</strong> Click the button above to toggle
+          between light and dark mode (overrides system preference)
+        </li>
+      </ul>
+      <h2>Typography</h2>
+      <p>
+        Headings, paragraphs, lists, tables, and blockquotes are all styled for
+        readability. The only font used is
+        <strong>Merriweather</strong> (serif).
+      </p>
+      <h3>Blockquote</h3>
+      <blockquote>
+        “Typography is the craft of endowing human language with a durable
+        visual form.”<br />
+        <span style="font-size: 0.95em; float: right">— Robert Bringhurst</span>
+      </blockquote>
+      <h3>Lists</h3>
+      <ul class="stack">
+        <li>Simple, readable spacing</li>
+        <li>No utility classes needed</li>
+        <li>Easy to override</li>
+      </ul>
+      <ol class="stack">
+        <li>First ordered item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <h3>Tables</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oranges</td>
+            <td>5</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Apples</td>
+            <td>6</td>
+            <td>$13.00</td>
+          </tr>
+          <tr>
+            <td>Bananas</td>
+            <td>11</td>
+            <td>$2.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Code</h3>
+      <p>
+        Inline <code>code</code> and code blocks use
+        <code>--color-block</code> for background.
+      </p>
+      <h3>Customizing</h3>
+      <p>
+        You can override any color variable or utility in your own CSS. For
+        example, to change the accent color:
+      </p>
+      <pre><code>:root {
+            --color-accent: #ff5a36;
+        }</code></pre>
+      <h3>Try it yourself</h3>
+      <p>
+        Use <code>allons-y.css</code> as a base for your own site. Add your own
+        colors, fonts, or layout as needed. For more info, see the
+        <a href="../README.md">README</a>.
+      </p>
+      <p style="margin-top: 3em; font-size: 0.95em; color: var(--color-muted)">
+        &copy; 2025 yakbrother
+      </p>
     </main>
-</body>
+    <script>
+      // Simple dark/light mode switch
+      const btn = document.getElementById("theme-switch");
+      const root = document.documentElement;
+      let forced = false;
+      function setTheme(mode) {
+        if (mode === "dark") {
+          root.setAttribute("data-theme", "dark");
+          btn.setAttribute("aria-pressed", "true");
+          btn.textContent = "Switch to light mode";
+          forced = true;
+        } else if (mode === "light") {
+          root.setAttribute("data-theme", "light");
+          btn.setAttribute("aria-pressed", "false");
+          btn.textContent = "Switch to dark mode";
+          forced = true;
+        } else {
+          root.removeAttribute("data-theme");
+          btn.setAttribute("aria-pressed", "false");
+          btn.textContent = "Switch to dark mode";
+          forced = false;
+        }
+      }
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        if (!current) setTheme("dark");
+        else if (current === "dark") setTheme("light");
+        else setTheme();
+      });
+      // Optional: respect system preference on load
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        setTheme("dark");
+      }
+    </script>
+  </body>
 </html>

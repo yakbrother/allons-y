@@ -28,20 +28,44 @@ Because most CSS frameworks are overkill for simple, text-driven sites. I wanted
 
 For more on the thinking behind this, check out [Utopia.fyi](https://utopia.fyi/) for fluid type and space, [The Lobotomized Owl](https://css-tricks.com/the-lobotomized-owl/) for the spacing trick, and [Every Layout: The Stack](https://every-layout.dev/layouts/stack/) for vertical content stacks.
 
-
 ## How to use
 
-1. Download or copy `allonz-y.css` into your project.
+1. Download or copy `allons-y.css` into your project.
 2. Link it in your HTML before your own styles:
 
-	```html
-	<link rel="stylesheet" href="/path/to/allonz-y.css">
-	<link rel="stylesheet" href="/your-site-styles.css">
-	```
+   ```html
+   <link rel="stylesheet" href="/path/to/allons-y.css" />
+   <link rel="stylesheet" href="/your-site-styles.css" />
+   ```
 
-3. Add your own colors, fonts, or layout as needed. This file only sets up spacing and readable defaults.
+3. Add your own colors, fonts, or layout as needed. This file only sets up spacing, color variables, and readable defaults.
 
 **Note:** Depending on your chosen font, you may want to adjust `line-height` or `letter-spacing` for best results. The defaults are tuned for common web fonts, but every typeface is a little different.
+
+## Colors and utilities
+
+allons-y.css uses CSS custom properties (variables) for all colors, so you can easily theme your site. The default colors are:
+
+- `--color-bg`: background color (light: #f3f0ff, dark: #18131f)
+- `--color-fg`: foreground/text color (light: #2a2233, dark: #f3f0ff)
+- `--color-accent`: accent color for links, highlights (light: #6a4cff, dark: #bbaaff)
+- `--color-muted`: muted/secondary text (light: #8a7bb7, dark: #bbaaff)
+- `--color-block`: block backgrounds (light: #f7f4ff, dark: #231a33)
+- `--color-border`: border color (light: #e6e0f7, dark: #3a2a4a)
+
+You can override any of these in your own CSS or with a theme switcher. The file also includes a `.stack` utility for vertical spacing:
+
+```css
+.stack > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+```
+
+Set `--flow-space` on a parent to control spacing between children.
+
+## Demo
+
+I've installed a demo with some dummy text on my server at [https://www.yakdrive.io/allonz-y](https://www.yakdrive.io/allonz-y).
 
 ## Demo
 
